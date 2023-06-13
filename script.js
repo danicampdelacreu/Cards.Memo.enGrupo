@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
 const url = `https://api.pexels.com/v1/search?query=flores&per_page=8`;
 const headers = { Authorization: 'CrIzthWbxPSYAUYYyeXpMKJH4m2nmHkmhVlkvRP66dXm0Ze1JAFZnxZv' };
 let contadorIntentos = 0; 
-let parejasEncontradas = 0;// Jesus---variable para alert de parejas encontradas
+let parejasEncontradas = 0;//variable para alert de parejas encontradas
 
 fetch(url, { headers })
     .then(response => response.json())
@@ -84,7 +84,7 @@ function obtenerFotosFlores(data) {
                             
                             if (parejasEncontradas === 1 && contadorIntentos >= 2) {
                                 setTimeout(() => {
-                                    alert ("Mal empezamos, lumbreras...");
+                                    alert ("Esfuerzate un poco mas");
                                 }, 500);
                             }
 
@@ -111,9 +111,9 @@ function obtenerFotosFlores(data) {
                                     alert ("¡Ya te despertaste! ¡Buenos días!");
                                 }, 500);
                             }
-                            //--------Jesus--Fin frases funciones jugadores malos----------
+                            //--------Fin frases funciones jugadores malos----------
 
-                            //--------Jesus--Inicio frases funciones de jugadores buenos----------
+                            //--------Inicio frases funciones de jugadores buenos----------
                             if (parejasEncontradas === 1 && contadorIntentos <= 1) {
                                 setTimeout(() => {
                                     alert ("Buena memoria !Sigue así!");
@@ -122,30 +122,30 @@ function obtenerFotosFlores(data) {
 
                             if (parejasEncontradas === 3 && contadorIntentos <= 4) {
                                 setTimeout(() => {
-                                    alert ("!Vaya vaya! Cerebrito a la vista, enhorabuena");
+                                    alert ("!Nada mal, enhorabuena");
                                 }, 500);
                             }
 
                             if (parejasEncontradas === 5 && contadorIntentos <= 8) {
                                 setTimeout(() => {
-                                    alert ("¡Qué bueno! ¿Has pensado donar tu cerebro a la cienca?");
+                                    alert ("¡Qué bueno! No pares que ya lo tienes");
                                 }, 500);
                             }
 
                             if (parejasEncontradas === 6 && contadorIntentos <= 11) {
                                 setTimeout(() => {
-                                    alert ("¡Enhorabuena! De aquí a PASAPALABRA");
+                                    alert ("¡Enhorabuena! Casi lo tienes");
                                 }, 500);
                             }
 
                             if (parejasEncontradas === 7 && contadorIntentos <= 12) {
                                 setTimeout(() => {
-                                    alert ("¡Ya lo tienes, qué CAB**N!");
+                                    alert ("¡Ya lo tienes, felicidades!!!");
                                 }, 500);
                             }
-                            //--------Jesus--Fin frases funciones de jugadores buenos----------
+                            //----------Fin frases funciones de jugadores buenos----------
 
-                            if (parejasEncontradas === 8) { //Jesus---función de alert de fin de juego con botones de SALIR o JUGAR DE NUEVO
+                            if (parejasEncontradas === 8) { //---función de alert de fin de juego con botones de SALIR o JUGAR DE NUEVO
                                 setTimeout(() => {
                                   const reiniciarJuego = window.confirm('¡Enhorabuena! ¡Te pasaste el juego!\n¿Deseas reiniciar?');
                                   if (reiniciarJuego) {
